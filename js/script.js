@@ -1,4 +1,9 @@
-// slice
-let str = "Hello@ravanth";
-str = str.slice(0, 5) +str.slice(6, str.length);
-console.log(str);
+// text color
+
+let btn = document.getElementById("btn");
+function changeColor() {
+    let color = document.getElementById("colorText");
+    document.body.style.color = color.value;
+
+}
+btn.addEventListener("click", changeColor);
